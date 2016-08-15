@@ -1,0 +1,34 @@
+name: UseLess
+version: 1.0
+cabal-version: 1.11
+build-type: Simple
+license: GPL
+stability: experimental
+bug-reports: mailto://jike3212001@163.com
+synopsis: A crawler framework
+description:
+    The UseLess Framework supports HTML parsing and Open-Close Table algorithm to support task scheduling.
+category: Crawler Framework
+author: SnowWalkerJ
+data-files:
+    example.html
+x-ghc-framework-version: 7.10.3-5.9-2
+x-last-ide-version: HfM1.2.1
+Executable UseLess
+  main-is: Main.hs
+  buildable: True
+  build-depends:
+      base -any,
+      HTTP -any,
+      split -any,
+      mtl -any,
+      parsec -any,
+      network-uri -any
+  other-modules:
+      Data.Misc
+      Data.OCTable
+      Data.HTML
+      Data.Queue
+      Data.Crawler
+      Data.HTML.Selector
+      Data.HTML.Parser
