@@ -1,5 +1,6 @@
 module Data.HTML where
     import Control.Monad
+    import Data.Maybe (maybeToList)
     
     data Tag = 
         Tag {
@@ -50,9 +51,7 @@ module Data.HTML where
     (?>>)::[Tag]->(Tag->Maybe String)->[String]
     tags ?>> g = do
         thisTag <- tags
-        case g thisTag of
-            Nothing -> []
-            Just s -> return s
+        maybeToList (g thisTag)
 
     (!)::Tag->String->Maybe String
     tag ! attrName = lookup attrName (attrs tag)
@@ -61,9 +60,7 @@ module Data.HTML where
     tags !! attrName = do
         tag <- tags
         let attrValue = tag ! attrName
-        case attrValue of
-            Nothing -> []
-            Just v -> return v
+        maybeToList attrValue
             
     
     
