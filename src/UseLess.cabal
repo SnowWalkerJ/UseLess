@@ -10,8 +10,6 @@ description:
     The UseLess Framework supports HTML parsing and Open-Close Table algorithm to support task scheduling.
 category: Crawler Framework
 author: SnowWalkerJ
-data-files:
-    example.html
 x-ghc-framework-version: 7.10.3-5.9-2
 x-last-ide-version: HfM1.2.1
 Executable UseLess
