@@ -1,5 +1,0 @@
--- Haskell Playground 1.0
-let selector = createSelector "html"
-let tag = Tag "html" [] []
-matchSelector selector tag
-[Text "", Tag "html" [] []] ||> selector
