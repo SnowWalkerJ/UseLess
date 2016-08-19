@@ -8,12 +8,5 @@ Useless Framework provides:
     - Tag selector, to easily select tags from a tree, like what you do in css;
 - a monad transformer that supports Open-Close Table algorithm, to help task scheduling
 
-This Wiki contains the following pages:
-- [Get Started](https://github.com/SnowWalkerJ/UseLess/wiki/Get-Started)
-- Data.Crawler
-- Data.HTML
-- Data.HTML.Parser
-- Data.HTML.Selector
-
 --------
 For usage, please refer to [Wiki](https://github.com/SnowWalkerJ/UseLess/wiki)
